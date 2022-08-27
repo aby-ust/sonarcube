@@ -32,8 +32,8 @@ spec:
         app: my-app
     spec:
       containers:
-      - name: springboot
-        image: harnesspoc01/springboot: {{.Values.tag_name}}
+      - name: docker
+        image: abyalias/docker: {{.Values.tag_name}}
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
